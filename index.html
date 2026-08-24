@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<script>document.documentElement.classList.add("js-ready");</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CoreSetup Studio - Premium Websites für Unternehmen in Berlin</title>
+<meta name="description" content="CoreSetup Studio baut Premium-Websites für Unternehmen in Berlin: Design, Entwicklung, Hosting, Sicherheit und Support aus einer Hand.">
+<meta name="theme-color" content="#0a0a0a">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="CoreSetup Studio - Premium Websites für Unternehmen in Berlin">
+<meta property="og:description" content="Websites, die Vertrauen aufbauen und Kundenanfragen generieren. Design, Hosting, Sicherheit und Support aus einer Hand.">
+<meta property="og:image" content="assets/img/og-cover.jpg">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="canonical" href="https://coresetup.studio/">
+
+<!-- Universal Sans (xAI's proprietary display face) is not licensable.
+     Inter at weight 400 with tight negative tracking is the documented
+     open-source substitute. JetBrains Mono carries the uppercase
+     eyebrow/label role. Both loaded via Google Fonts - see README for
+     the self-hosting note if this goes to production build tooling. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<!-- ============ NAV: single-row, translucent-to-elevated on scroll ============ -->
+<header class="nav-bar" data-nav data-scrolled="false">
+  <div class="nav-bar__inner">
+    <a href="#top" class="nav-bar__logo"><span class="nav-bar__logo-mark" aria-hidden="true"></span>CoreSetup Studio</a>
+    <nav class="nav-bar__links t-nav-link" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#prozess">Vorgehen</a>
+      <a href="#projekte">Projekte</a>
+      <a href="#preise">Preise</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-bar__actions">
+      <a href="#kontakt" class="btn-outline-sm">Projekt anfragen</a>
+      <button class="nav-bar__toggle" data-nav-toggle aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileNav">
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-mobile" id="mobileNav" data-nav-mobile data-open="false">
+  <nav aria-label="Mobile Navigation">
+    <a href="#leistungen">Leistungen</a>
+    <a href="#prozess">Vorgehen</a>
+    <a href="#projekte">Projekte</a>
+    <a href="#preise">Preise</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</div>
+
+<main id="main" class="page-shell">
+
+  <!-- ============ HERO: 3D wireframe network globe ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <span class="t-eyebrow" data-reveal>CoreSetup Studio &middot; Berlin</span>
+        <h1 class="t-display-xl" data-reveal>Websites, gebaut<br>für den nächsten<br>Umsatzschritt.</h1>
+        <p class="t-lead" data-reveal style="margin-top: 1.5rem;">Premium-Websites für Unternehmen, die Vertrauen aufbauen und Kundenanfragen generieren, mit Hosting, Sicherheit und Support aus einer Hand.</p>
+        <div class="hero__ctas" data-reveal>
+          <a href="#kontakt" class="btn-primary">Projekt anfragen</a>
+          <a href="#leistungen" class="btn-outline">Leistungen ansehen</a>
+        </div>
+        <div class="hero__trust" data-reveal>
+          <span class="hero__trust-stars" aria-hidden="true">★★★★★</span>
+          <span class="t-caption">5.0 bei Google, aus 12 Bewertungen</span>
+        </div>
+      </div>
+      <div class="hero__stage" data-reveal aria-hidden="true">
+        <div class="hero__glow"></div>
+        <canvas id="globeCanvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust-strip">
+    <p class="t-caption" data-reveal><strong>Ein fester Ansprechpartner</strong> für Design, Hosting, Sicherheit und Support, vom ersten Entwurf bis zum laufenden Betrieb.</p>
+  </section>
+
+  <!-- ============ LEISTUNGEN ============ -->
+  <section class="band" id="leistungen">
+    <div class="wrap">
+      <div class="band__head" data-reveal>
+        <span class="t-eyebrow">Leistungen</span>
+        <h2 class="t-display-lg">Vier Bereiche, ein Team.</h2>
+      </div>
+
+      <div class="card-grid" data-reveal>
+        <article class="utility-card">
+          <span class="utility-card__icon"><i class="ph ph-code" aria-hidden="true"></i></span>
+          <h3>Website-Entwicklung</h3>
+          <p>Moderne Unternehmensseiten mit sauberer SEO-Struktur und klarem Fokus auf Kundenanfragen.</p>
+        </article>
+        <article class="utility-card">
+          <span class="utility-card__icon"><i class="ph ph-server" aria-hidden="true"></i></span>
+          <h3>Hosting & Betrieb</h3>
+          <p>Verwaltetes Hosting inklusive Monitoring, automatischen Backups und laufendem Support.</p>
+        </article>
+        <article class="utility-card">
+          <span class="utility-card__icon"><i class="ph ph-shield-check" aria-hidden="true"></i></span>
+          <h3>Security-Setup</h3>
+          <p>HTTPS, Security-Header und Schutzmaßnahmen gegen gängige Angriffe, direkt bei der Einrichtung.</p>
+        </article>
+        <article class="utility-card">
+          <span class="utility-card__icon"><i class="ph ph-gauge" aria-hidden="true"></i></span>
+          <h3>Technische Stabilisierung</h3>
+          <p>Performance-Optimierung für bestehende Websites, die langsam geworden sind oder Fehler zeigen.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROZESS ============ -->
+  <section class="band" id="prozess">
+    <div class="wrap">
+      <div class="band__head" data-reveal>
+        <h2 class="t-display-lg">So läuft die Zusammenarbeit ab.</h2>
+      </div>
+
+      <div class="process-list" data-reveal>
+        <div class="process-row">
+          <span class="process-row__index">01</span>
+          <div>
+            <h3>Analyse</h3>
+            <p>Wir sichten deine bestehende Website oder Anforderung und zeigen, wo die größten Hebel liegen.</p>
+          </div>
+        </div>
+        <div class="process-row">
+          <span class="process-row__index">02</span>
+          <div>
+            <h3>Konzept & Design</h3>
+            <p>Struktur, Text und Design entstehen abgestimmt auf dein Angebot und deine Zielgruppe.</p>
+          </div>
+        </div>
+        <div class="process-row">
+          <span class="process-row__index">03</span>
+          <div>
+            <h3>Entwicklung</h3>
+            <p>Umsetzung mit sauberem Code, Performance-Budget und SEO-Grundlage von Anfang an.</p>
+          </div>
+        </div>
+        <div class="process-row">
+          <span class="process-row__index">04</span>
+          <div>
+            <h3>Launch & Support</h3>
+            <p>Übergabe, Monitoring und ein fester Ansprechpartner für alles, was danach kommt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJEKTE ============ -->
+  <section class="band" id="projekte">
+    <div class="wrap">
+      <div class="band__head" data-reveal>
+        <span class="t-eyebrow">Ausgewählte Arbeiten</span>
+        <h2 class="t-display-lg">Referenzformate.</h2>
+        <p class="t-lead" style="margin-top: 0.75rem;">Beispielhafte Projektformate. Echte Referenzen und Case Studies stellen wir auf Anfrage bereit.</p>
+      </div>
+
+      <div class="work-rail" data-reveal>
+        <article class="work-card">
+          <a class="work-card__media" href="#kontakt">
+            <img src="https://picsum.photos/seed/coresetup-kanzlei-gold/700/700" alt="Website-Relaunch für eine Berliner Kanzlei" loading="lazy" width="700" height="700">
+          </a>
+          <h3>Website-Relaunch, Kanzlei</h3>
+          <p>Neue Struktur, klare Leistungsseiten, Kontaktpfad in drei Klicks.</p>
+          <a href="#kontakt" class="text-link">Mehr erfahren</a>
+        </article>
+        <article class="work-card">
+          <a class="work-card__media" href="#kontakt">
+            <img src="https://picsum.photos/seed/coresetup-zahnarzt-gold/700/700" alt="Website für eine Zahnarztpraxis" loading="lazy" width="700" height="700">
+          </a>
+          <h3>Praxis-Website, Zahnmedizin</h3>
+          <p>Terminanfrage direkt im ersten Bildschirm.</p>
+          <a href="#kontakt" class="text-link">Mehr erfahren</a>
+        </article>
+        <article class="work-card">
+          <a class="work-card__media" href="#kontakt">
+            <img src="https://picsum.photos/seed/coresetup-handwerk-gold/700/700" alt="Landingpage für einen Handwerksbetrieb" loading="lazy" width="700" height="700">
+          </a>
+          <h3>Landingpage, Handwerksbetrieb</h3>
+          <p>Ein Angebot, ein Formular, keine Ablenkung.</p>
+          <a href="#kontakt" class="text-link">Mehr erfahren</a>
+        </article>
+        <article class="work-card">
+          <a class="work-card__media" href="#kontakt">
+            <img src="https://picsum.photos/seed/coresetup-hotel-gold/700/700" alt="Website für ein Boutique-Hotel" loading="lazy" width="700" height="700">
+          </a>
+          <h3>Website, Boutique-Hotel</h3>
+          <p>Buchungsanfragen statt nur schöner Bilder.</p>
+          <a href="#kontakt" class="text-link">Mehr erfahren</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PREISE ============ -->
+  <section class="band" id="preise">
+    <div class="wrap">
+      <div class="band__head" data-reveal>
+        <span class="t-eyebrow">Preise</span>
+        <h2 class="t-display-lg">Transparent kalkuliert.</h2>
+        <p class="t-lead" style="margin-top: 0.75rem;">Drei Pakete, keine versteckten Kosten.</p>
+      </div>
+
+      <div class="pricing-grid" data-reveal>
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p class="price-card__desc">Landingpage für ein Angebot oder eine Kampagne.</p>
+          <p class="price-card__amount">349 €</p>
+          <ul class="price-card__list">
+            <li>Eine Seite, klarer Aufbau</li>
+            <li>Kontaktformular</li>
+            <li>Mobile-optimiert</li>
+          </ul>
+          <a href="#kontakt" class="btn-outline btn-block">Projekt anfragen</a>
+        </article>
+
+        <article class="price-card price-card--selected">
+          <span class="price-card__tag">Meistgewählt</span>
+          <h3>Business</h3>
+          <p class="price-card__desc">Vollständige Unternehmenswebsite mit mehreren Seiten.</p>
+          <p class="price-card__amount">1.999 €</p>
+          <ul class="price-card__list">
+            <li>Bis zu 8 Unterseiten</li>
+            <li>SEO-Grundstruktur</li>
+            <li>Individuelles Design</li>
+            <li>Security-Setup inklusive</li>
+          </ul>
+          <a href="#kontakt" class="btn-primary btn-block">Projekt anfragen</a>
+        </article>
+
+        <article class="price-card">
+          <h3>Premium</h3>
+          <p class="price-card__desc">High-End-Entwicklung mit gehärteter Sicherheit.</p>
+          <p class="price-card__amount">3.999 €</p>
+          <ul class="price-card__list">
+            <li>Umfangreiche Struktur & Funktionen</li>
+            <li>Security-Hardening</li>
+            <li>Priorisierte Umsetzung</li>
+          </ul>
+          <a href="#kontakt" class="btn-outline btn-block">Projekt anfragen</a>
+        </article>
+      </div>
+
+      <p class="pricing-footnote">Optionales Managed Hosting: 29 bis 129 € pro Monat, je nach Umfang.</p>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIAL ============ -->
+  <section class="band quote-band">
+    <div class="wrap">
+      <div class="quote-band__stack" data-reveal>
+        <span class="quote-band__stars" aria-hidden="true">★★★★★</span>
+        <blockquote>"Sehr professionelle Umsetzung. Die Website sieht nicht nur gut aus, sondern bringt auch Anfragen."</blockquote>
+        <p class="quote-band__meta">Google-Rezension, 5 von 5 Sternen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECH ============ -->
+  <section class="band tech-band">
+    <div class="wrap" data-reveal>
+      <p class="t-caption">Technologien, mit denen wir arbeiten</p>
+      <div class="tech-row">
+        <img src="https://cdn.simpleicons.org/wordpress/c9a961" alt="WordPress" loading="lazy" width="26" height="26">
+        <img src="https://cdn.simpleicons.org/webflow/c9a961" alt="Webflow" loading="lazy" width="26" height="26">
+        <img src="https://cdn.simpleicons.org/shopify/c9a961" alt="Shopify" loading="lazy" width="26" height="26">
+        <img src="https://cdn.simpleicons.org/cloudflare/c9a961" alt="Cloudflare" loading="lazy" width="26" height="26">
+        <img src="https://cdn.simpleicons.org/googleanalytics/c9a961" alt="Google Analytics" loading="lazy" width="26" height="26">
+        <img src="https://cdn.simpleicons.org/stripe/c9a961" alt="Stripe" loading="lazy" width="26" height="26">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="band" id="faq">
+    <div class="wrap wrap--text">
+      <div class="band__head" data-reveal>
+        <span class="t-eyebrow">FAQ</span>
+        <h2 class="t-display-lg">Vor dem Anfragen beantwortet.</h2>
+      </div>
+
+      <div class="faq" data-reveal>
+        <details class="faq__item" open>
+          <summary>Wie lange dauert die Umsetzung einer Website?</summary>
+          <p>Je nach Umfang zwischen zwei und sechs Wochen, von der Analyse bis zum Launch. Den genauen Rahmen legen wir vorab gemeinsam fest.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Was ist im Hosting enthalten?</summary>
+          <p>Monitoring, automatische Backups, Sicherheitsupdates und Support. Du musst dich um nichts Technisches selbst kümmern.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Kann ich meine bestehende Website "retten" statt neu zu bauen?</summary>
+          <p>Oft ja. Wir prüfen zuerst, ob eine technische Stabilisierung reicht, bevor wir einen kompletten Neubau empfehlen.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Wie läuft die Zusammenarbeit ab?</summary>
+          <p>Ein fester Ansprechpartner begleitet dein Projekt von der ersten Anfrage bis zum Support danach. Kein Wechsel der Kontaktperson.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Bietet ihr eine kostenlose Analyse an?</summary>
+          <p>Ja. Schick uns deine bestehende Website oder dein Vorhaben, wir melden uns mit einer ehrlichen Einschätzung zurück.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAKT ============ -->
+  <section class="band" id="kontakt" style="border-bottom: none;">
+    <div class="wrap">
+      <div class="band__head" data-reveal>
+        <span class="t-eyebrow">Kontakt</span>
+        <h2 class="t-display-lg">Projekt anfragen.</h2>
+        <p class="t-lead" style="margin-top: 0.75rem;">Erzähl uns kurz, worum es geht.</p>
+      </div>
+
+      <div class="kontakt-grid" data-reveal>
+        <div class="kontakt-intro">
+          <p>Wir melden uns in der Regel innerhalb von 48 Stunden mit einer ehrlichen Einschätzung.</p>
+          <div class="kontakt-direct">
+            <a href="mailto:info@coresetup.studio" class="text-link">
+              <i class="ph ph-envelope-simple" aria-hidden="true"></i> info@coresetup.studio
+            </a>
+            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="text-link">
+              <i class="ph ph-whatsapp-logo" aria-hidden="true"></i> Direkt per WhatsApp schreiben
+            </a>
+          </div>
+        </div>
+
+        <form data-contact-form>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-block">Projekt anfragen</button>
+          <p class="field__hint">Dieses Formular ist ein Platzhalter. Bitte an ein echtes Formular-Backend (z. B. Formspree, eigenes API-Endpoint) anbinden.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__cols">
+      <div class="footer__col">
+        <h4>CoreSetup Studio</h4>
+        <span>Premium Websites, Hosting, Sicherheit und Support für Unternehmen in Berlin.</span>
+      </div>
+      <div class="footer__col">
+        <h4>Navigation</h4>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#projekte">Projekte</a>
+        <a href="#preise">Preise</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div class="footer__col">
+        <h4>Kontakt</h4>
+        <a href="mailto:info@coresetup.studio">info@coresetup.studio</a>
+        <span>Berlin, Deutschland</span>
+      </div>
+      <div class="footer__col">
+        <h4>Rechtliches</h4>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer__legal">
+      © <span data-year></span> CoreSetup Studio
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
