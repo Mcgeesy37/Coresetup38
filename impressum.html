@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impressum - CoreSetup Studio</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .legal-shell { padding-top: calc(var(--nav-h) + var(--sp-3xl)); padding-bottom: var(--sp-section); max-width: var(--wrap-text-max); margin-inline: auto; padding-inline: clamp(1.25rem, 4vw, 3rem); }
+  .legal-shell h2 { font-size: 21px; font-weight: 400; margin-top: 2.25rem; margin-bottom: 0.75rem; }
+  .legal-shell h2:first-of-type { margin-top: 0; }
+  .legal-shell p, .legal-shell li { color: var(--body); font-size: 15px; line-height: 1.65; }
+  .legal-shell li { margin-bottom: 0.4rem; }
+  .legal-shell a { color: var(--gold); text-decoration: underline; }
+  .placeholder { background: var(--gold-glow-soft); color: var(--gold-bright); padding: 0.05em 0.4em; border-radius: var(--r-sm); font-size: 0.85em; }
+</style>
+</head>
+<body>
+
+<header class="nav-bar" data-nav data-scrolled="true">
+  <div class="nav-bar__inner">
+    <a href="index.html#top" class="nav-bar__logo"><span class="nav-bar__logo-mark" aria-hidden="true"></span>CoreSetup Studio</a>
+    <nav class="nav-bar__links t-nav-link" aria-label="Hauptnavigation">
+      <a href="index.html#leistungen">Leistungen</a>
+      <a href="index.html#preise">Preise</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+    <div class="nav-bar__actions">
+      <a href="index.html#kontakt" class="btn-outline-sm">Projekt anfragen</a>
+    </div>
+  </div>
+</header>
+
+<main class="legal-shell">
+  <h1 class="t-display-lg">Impressum</h1>
+
+  <h2>Angaben gemäß § 5 TMG</h2>
+  <p>
+    <span class="placeholder">[Platzhalter: vollständiger Name / Firmenname]</span><br>
+    <span class="placeholder">[Platzhalter: Straße und Hausnummer]</span><br>
+    <span class="placeholder">[Platzhalter: PLZ und Ort]</span>
+  </p>
+
+  <h2>Kontakt</h2>
+  <p>
+    E-Mail: <a href="mailto:info@coresetup.studio">info@coresetup.studio</a><br>
+    Telefon: <span class="placeholder">[Platzhalter: Telefonnummer]</span>
+  </p>
+
+  <h2>Vertreten durch</h2>
+  <p><span class="placeholder">[Platzhalter: vertretungsberechtigte Person]</span></p>
+
+  <h2>Registereintrag</h2>
+  <p>
+    Sofern zutreffend:<br>
+    Registergericht: <span class="placeholder">[Platzhalter]</span><br>
+    Registernummer: <span class="placeholder">[Platzhalter]</span>
+  </p>
+
+  <h2>Umsatzsteuer-ID</h2>
+  <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: <span class="placeholder">[Platzhalter: USt-IdNr., falls vorhanden]</span></p>
+
+  <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+  <p><span class="placeholder">[Platzhalter: Name, Anschrift wie oben]</span></p>
+
+  <h2>Streitschlichtung</h2>
+  <p>
+    Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+    <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">ec.europa.eu/consumers/odr</a>.
+    Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen, sofern hier nicht anders angegeben.
+  </p>
+
+  <p style="margin-top: 2.5rem; font-size: 0.82rem;">
+    Dieses Impressum ist eine Vorlage und noch nicht rechtsverbindlich. Bitte alle mit <span class="placeholder">[Platzhalter]</span> markierten Angaben durch die echten Unternehmensdaten ersetzen, im Zweifel rechtlich prüfen lassen.
+  </p>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__legal" style="margin-top:0; border-top:none;">
+    © <span data-year></span> CoreSetup Studio
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll("[data-year]").forEach(function (el) {
+    el.textContent = new Date().getFullYear();
+  });
+</script>
+</body>
+</html>
